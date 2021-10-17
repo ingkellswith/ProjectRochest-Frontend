@@ -1,0 +1,91 @@
+.product-detail-container {
+  display: flex;
+  justify-content: center;
+  .product-detail-info {
+    display: flex;
+    justify-content: center;
+    font-family: "Gowun Dodum", sans-serif;
+    margin-top: 20px;
+    .product-img {
+      width: 600px;
+      height: 600px;
+      object-fit: scale-down;
+      margin-right: 30px;
+      border-bottom: 3px double black;
+    }
+    .product-detail-info-side-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 500px;
+      position: relative;
+      .product-company {
+        color: grey;
+        font-size: 18px;
+      }
+      .product-name {
+        color: black;
+        font-size: 30px;
+      }
+      .product-price {
+        font-size: 24px;
+      }
+      .product-tag {
+        span {
+          font-size: 13px;
+          padding: 1px 5px;
+          background-color: grey;
+          color: white;
+          border-radius: 10px;
+        }
+      }
+      .product-benefit {
+        margin-top: 10px;
+        display: flex;
+        > span:first-child {
+          margin-right: 20px;
+        }
+        .bold {
+          font-weight: 600;
+          margin-right: 3px;
+        }
+      }
+      .product-delivery {
+        display: flex;
+        > span:first-child {
+          margin-right: 20px;
+        }
+        .bold {
+          font-weight: 600;
+        }
+      }
+      .product-button-container {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        .button {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+          height: 55px;
+          font-size: 22px;
+        }
+        .cart {
+          background-color: white;
+          border: 1px solid black;
+          margin-right: 10px;
+        }
+        .purchase {
+          background-color: black;
+          border: 1px solid black;
+          color: white;
+        }
+      }
+    }
+  }
+}
